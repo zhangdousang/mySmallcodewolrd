@@ -9,8 +9,6 @@ body{
     height:450px;
     background: #ffffff;
     float: left;
-
-
 }
 .box{
      width: 145px;
