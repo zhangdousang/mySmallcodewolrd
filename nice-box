@@ -5,20 +5,23 @@ body{
     font:normal 100% Arial,sans-serif;
 }
 .content{
-    width: 450px;
-    height:450px;
+    width: 28em;
+    height:28em;
     background: #ffffff;
     float: left;
+
+
 }
 .box{
-     width: 145px;
-     height: 145px;
+     width: 9em;
+     height: 9em;
      background-color: #e8830d;
-     border-radius: 8px;
-     border: 2px;
-     margin:2px;
+     border-radius: 0.5em;
+     border: 0.125em;
+     margin:0.125em;
      float: left;
-  }
+
+    }
 </style>
 <head lang="en">
    <meta charset="UTF-8">
@@ -39,3 +42,4 @@ body{
 </div>
 </body>
 </html>
+
