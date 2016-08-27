@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>task_4B</title>
+</head>
+<style type="text/css">
+    *{
+        margin:0;
+        padding:0;
+    }
+    html{
+        font-size:62.5%;
+        height:100%;
+        margin:0;
+    }
+    body{
+        background-color:#EFF0F4;
+        height:100%;
+        margin:0;
+    }
+    a{
+        text-decoration:none;
+        color:#fff;
+        font-size:1.5em;
+    }
+    .nav{
+        text-align:center;
+        height:5em;
+        width:100%;
+        background-color:#5FC0CD;
+    }
+    .close{
+        position:absolute;
+        left:2em;
+        top:1em;
+        padding:0.5em;
+    }
+    .title{
+        line-height:3em;
+        color:#fff;
+        font-size:2em;
+    }
+    .enroll{
+        position:absolute;
+        top:1em;
+        right:2em;
+        padding:0.5em;
+    }
+    .container{
+        margin-top:1.5em;
+        width:100%;
+    }
+    .input1,.input2{
+        width:100%;
+        background-color:#fff;
+    }
+    img{
+        width:8%;
+        margin-top:0.25%;
+        padding-right:0.5%;
+        padding-left:0;
+        border-right:0.2em solid #e1e5e7;
+    }
+    .input1 input,.input2 input{
+        position:absolute;
+        width:91%;
+        margin-top:0;
+        padding:2em 0;
+        border:none;
+        font-size:2em;
+    }
+    .button input{
+        padding:1em;
+        font-size:2.5em;
+        color:#fff;
+        background-color:#5FC0CD;
+        width:100%;
+    }
+    .more{
+        color:#5FC0CD;
+        float:right;
+        padding:1em;
+    }
+</style>
+<body>
+<div class="nav">
+    <a href="#">
+        <span class="close">关闭</span>
+    </a>
+    <span class="title">登陆</span>
+    <a href="#">
+        <span class="enroll">注册</span>
+    </a>
+</div>
+<div class="container">
+    <div class="input1">
+        <img src="../../../untitled2/src/img/user.png" width="116" height="100" />
+        <input type="text" name="user" placeholder="  请输入手机号">
+    </div>
+    <br/>
+    <div class="input2">
+        <img src="../../../untitled2/src/img/pass.png" width="116" height="100" />
+        <input type="text" name="password" placeholder="  请输入密码">
+    </div>
+    <br/>
+    <div class="button">
+        <input type="button" value="登陆">
+    </div>
+    <a href="#">
+        <div class="more">忘记密码？</div>
+    </a>
+</body>
+</html>
