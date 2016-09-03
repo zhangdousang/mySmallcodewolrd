@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-sacale=1" />
+<title>task_5-1</title>
+</head>
+<style type="text/css">
+*{
+	margin:0;
+    padding:0;
+}
+html{
+	font-size:62.5%;
+	font-family:"microsoft yahei";
+}
+body{
+	width:100%;
+	min-width:320px;
+	background:#fff;
+}
+.nav{
+	background:#5FC0CD;
+	text-align:center;
+}
+.back{
+	position:absolute;
+	left:2em;
+	top:0.75em;
+}
+.tiltle{
+	display:inline-block;
+	color:#fff;
+	font-size:2em;
+	padding:0.75em;
+}
+.header{
+	background-image:url(images/task5-1_02.png);
+	background-repeat:no-repeat;
+	background-size:cover;	
+	position:relative;
+}
+.icon{
+	margin:5em 0 2.5em 2.5em;
+	border-radius:60px;
+	
+}
+.name,.age,.fixedposition{
+	color:#fff;
+}
+.name{
+	position:absolute;
+	top:50%;
+	left:30%;
+	font-size:2.5em;
+
+}
+.age{
+	position:absolute;
+	top:51.5%;
+	left:38%;
+	font-size:2em;
+}
+.location{
+	position:absolute;
+	left:30.3%;
+	top:67.5%;
+}
+.fixedposition{
+	position:absolute;
+	font-size:1.75em;
+	left:31.8%;
+	top:68.5%;
+}
+
+.top{
+	font-size:2em;
+	font-weight:bold;
+	margin:1em 0em;
+}
+.line1{
+	position:absolute;
+	margin-left:-1em;
+	margin-top:2.2em;
+}
+.picture1,.picture2{
+	vertical-align:middle;
+}
+td{
+	border:solid #E5EAEA;
+	border-width:0px 1px 1px 0px;
+	padding-left:3em;
+}
+table{
+	border:solid #E5EAEA;
+	border-width:1px 0px 0px 1px;
+}
+.part1,.part2,.part3,.part4,.part5{
+	font-size:2em;
+	line-height:4em;
+}
+.requireone{
+	border-right:solid 1px #989999;
+	padding-right:0.5em;
+}
+.one{
+	color:#989999;
+	border-right:solid 1px #989999;
+	padding-right:1em;
+}
+.picture2,{
+	padding-left:0.5em;
+}
+.two{
+	padding-left:1em;
+}
+.message{
+	display:inline-block;
+	font-size:2em;
+	line-height:2em;
+	text-decoration:none;
+	color:#5FC0CD;
+	background-color:#fff;
+	border:1px solid #5FC0CD; 
+	padding:0.5em 4em;
+	border-radius:0.5em;
+	margin-top:4em;
+	margin-right:1em;
+}
+.contact{
+	display:inline-block;
+	font-size:2em;
+	line-height:2em;
+	text-decoration:none;
+	color:#fff;
+	background-color:#5FC0CD;
+	border:1px solid #fff; 
+	padding:0.5em 3.2em;
+	border-radius:0.5em;
+	margin-top:4em;	
+}
+</style>
+<body>
+<div class="nav">
+  <a href="#">
+  <img class="back" src="images/task5-2_05.png" width="22" height="36" />
+   </a>
+  <span class="tiltle">个人主页</span>
+</div>
+
+<div class="header">
+  <img class="icon" src="images/task5-3_05_05.png" width="120" height="120" /> 
+  <span class="name">高素雅</span>
+  <span class="age">51岁</span>
+<img class="location" src="images/xxxxx_05.png" width="18" height="23" />
+  <span class="fixedposition">北京.通州.果园</span>
+</div>
+
+<div class="container">
+ <table cellspacing="0" cellpadding="0" width="100%" >
+    <tr>
+        <td>
+        <img class="line1" src="images/line1_14.png" width="3" height="16" />
+        <p class="top">专业技能</p>
+        </td>
+      </tr>
+      
+    <tr>
+        <td>
+       <div class="part1">
+       <img class="picture1" src="images/task5-3_05.png" width="25" height="25" />
+       <span class="requireone">住家</span>
+       <img class="picture2" src="images/task5-3_05(1).png" width="25" height="25" />
+       <span class="requiretwo">不含早餐</span>
+        </div>
+        </td>
+    </tr>  
+        
+   <tr>
+     <td>
+     <div class="part2">
+     <span class="one">从业年限</span>
+     <span class="two">0~3年</span>
+     </div>
+     </td>
+    </tr>
+    
+   <tr>      
+     <td>
+     <div class="part3">
+     <span class="one">工作时间</span>
+     <span class="two">全天</span>  
+     </div>
+     </td> 
+    </tr>
+    
+   <tr>   
+    <td>
+     <div class="part4">
+     <span class="one">服务价格</span>
+     <span class="two">25元/小时</span>
+     </div>
+    </td>
+   </tr>
+   
+  <tr>   
+    <td>
+    <div class="part5">
+    <span class="one">自我介绍</span>
+    <span class="two">可以洗衣、做饭、照顾老人。在护理方面有5年的经验，经验丰富。</span>
+    </div>
+     </td>
+   </tr>
+   
+   <tr>
+    <td>
+    <a href="#">
+    <span class="message">留言</span>
+    </a>
+    <a href="#">
+    <span class="contact">电话联系</span>
+    </a>
+    </td>
+    </tr>
+</table>
+</div>
+</body>
+</html>
