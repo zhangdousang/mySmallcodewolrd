@@ -1,0 +1,399 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-sacale=1" />
+   <title>task5-2</title>
+<style type="text/css">
+html{
+font-size:62.5%;
+
+}
+body{
+	width:100%;
+	min-width:320px;
+	font-size:100%;
+	
+	background-color:#fff;
+}
+@media screen and(max-width:480px){
+	html{
+		font-size:8px;
+		}
+}
+p{ 
+	margin:0;
+	font-family:"microsoft yahei";
+	font-size:1.75rem;
+	color:gray;
+}
+span{
+	font-family:"microsoft yahei";
+	color:#000;
+	font-size:1.75rem;
+}
+
+.header{
+	width:100%;
+	height:50px;
+	background-color:#59C0CF;
+	position:fixed;
+	text-align:center;
+	margin:0;
+	left:0;
+	top:0;
+	
+}
+.column{
+	width:100%;
+	height:50px;
+	background-color:#fff;
+	position:fixed;
+	top:50px;
+	left:0;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	
+}
+.filter1{
+	flex:1;
+	-wekit-box-flex:1;
+	-moz-box-flex:1;
+	border-bottom:1px solid lightgray;
+	text-align:center;
+	line-height:30px;
+}
+.filter2{
+	flex:1;
+	-wekit-box-flex:1;
+	-moz-box-flex:1;
+	-webkit-box-pack:center;
+	-webkit-box-align:center;
+	-moz-box-pack:center;
+	-moz-box-align:center;
+	border-bottom:1px solid lightgray;
+	text-align:center;
+	line-height:30px;
+}
+	
+.filter3{
+	flex:1;
+	-wekit-box-flex:1;
+	-moz-box-flex:1;
+	-webkit-box-pack:center;
+	-webkit-box-align:center;
+	-moz-box-pack:center;
+	-moz-box-align:center;
+	border-bottom:1px solid lightgray;
+	text-align:center;
+	line-height:30px;
+}
+	.main{
+		display:table;
+		width:100%;
+		position:absolute;
+		top:100px;
+		left:0;
+		z-index:-1;
+	}
+	.table-row{
+		display:table-row;
+	}
+   .content{
+		display:table-cell;
+		min-width:100%;
+		height:4rem;
+		line-height:4rem;
+		border-bottom:1px solid lightgray;
+	    vertical-align:middle;
+		position:relative;
+	}
+	.footer{
+		width:100%;
+		height:60px;
+		background-color:#F9FAFC;
+		position:fixed;
+		bottom:0;
+		left:0;
+		border-top:1px solid lightgray;
+	}
+span.findemployer{
+	display:inline-block;
+	width:85px;
+	height:40px;
+	background-color:#55A8B3;
+	font-family:"microsoft yahei";
+	font-size:2rem;
+	line-height:40px;
+	color:#fff;
+	margin-top:0.5rem;
+	border-top-left-radius:10px;
+	border-bottom-left-radius:10px;
+}
+span.findnurse{
+	display:inline-block;
+	width:85px;
+	height:40px;
+	background-color:#fff;
+	font-family:"microsoft yahei";
+	font-size:2rem;
+	line-height:40px;
+	color:#5BB2C1;
+	right:80px;
+	margin-left:-1rem;
+	margin-top:0.5rem;
+	border-radius:10px;
+}
+img.location{
+	height:30px;
+	position:absolute;
+	right:2%;
+	top:1rem;
+}
+p.filter{
+	border-left:1px solid lightgray;
+	margin:10px 0;
+}
+img.sign{
+	position: relative;
+	float:right;
+	right:5%;
+	top:1.1rem;
+}
+p.data{
+	padding-top:2%;
+	padding-left:2%;
+}
+img.data{
+	padding-right:0.5%;
+}
+span.when{
+	padding-left:4.5%;
+}
+span.cost{
+	color:#F00;
+	position:relative;
+	float:right;
+	right:10%;
+	
+}
+img.goon{
+	position:relative;
+	float:right;
+	left:20%;
+	top:0.4rem;
+}
+p.place{
+	padding-left:2%;
+	padding-bottom:2%;
+}
+img.place{
+	padding-right:0.5%;
+}
+img.home{
+	height:25px;
+	width:25px;
+	position:absolute;
+	left:30%;
+	transform:translateX(-50%);
+	top:12px;
+}
+img.personal{
+	height:25px;
+	width:25px;
+	position:absolute;
+	right:30%;
+	transform:translateX(50%);
+	top:12px;
+}
+.background{
+	width:50px;
+	height:50px;
+	margin:5px 0;
+	left:50%;
+	transform:translateX(-50%);
+	border-radius:50px;
+	position:absolute;
+	background-color:#58C1CE;
+
+}
+span.home{
+	position:absolute;
+	text-align:center;
+	color:#55A8B3;
+	font-size:1.25rem;
+	width:10%;
+	left:30%;
+	top:36px;
+	transform:translateX(-50%);
+}
+span.mine{
+	position:absolute;
+	text-align:center;
+	font-size:1.25rem;
+	width:10%;
+	color:lightgray;
+	right:30%;
+	top:36px;
+	transform:translateX(50%);
+}
+img.menu{
+	position:absolute;
+	height:25px;
+	width:25px;
+	margin:5px 0;
+	left:50%;
+	top:12px;
+	transform:translateX(-50%);
+}
+</style> 
+<body>
+ <div class="header">
+    <span class="findemployer">找雇主</span>
+    <span class="findnurse">找护士</span>
+    <a href="#">
+    <img  class="location" src="images/task5-2_09.png" width="30" height="30" />
+    </a> 
+ </div>
+ <div class="column">
+    <div class="filter1">
+      <p class="filter">所在地 
+      <a href="#">
+    <img class="sign" src="images/task5-23_08.jpg" width="13" height="8" />
+      </a>
+      </p>
+    </div>
+    <div class="filter2">
+      <p class="filter">食宿
+      <a href="#">
+       <img class="sign" src="images/task5-23_08.jpg" width="13" height="8" />
+      </a>
+      </p>
+    </div>
+    <div class="filter3">
+      <p class="filter">病人
+      <a href="#">
+        <img class="sign" src="images/task5-23_08.jpg" width="13" height="8" />
+      </a>
+      </p>
+    </div>
+ </div>
+ <div class="main">
+    <div class="table-row">
+      <div class="content">
+        <p class="data">
+        <img class="data"src="images/task5-25_07.png" width="24" height="24" />
+        服务时间
+        </p>
+        <span class="when">2015-7-5至2015-7-12</span>
+        <span class="cost">25元/小时
+        <a href="#">
+        <img class="goon" src="images/task5-26_14.png" width="19" height="34" />
+        </a>
+        </span>
+        <p class="place">
+        <img class="place" src="images/task5-24_17.png" width="24" height="23" />
+        北京.通州.果园
+        </p>
+      </div>
+    </div>
+    <div class="table-row">
+       <div class="content">
+        <p class="data">
+        <img class="data" src="images/task5-25_07.png" width="24" height="24" />
+        服务时间
+        </p>
+        <span class="when">2015-7-5至2015-7-12</span>
+        <span class="cost">35元/小时
+        <a href="#">
+        <img class="goon" src="images/task5-26_14.png" width="19" height="34" />
+        </a>
+        </span>
+        <p class="place">
+        <img class="place" src="images/task5-24_17.png" width="24" height="23" />
+        北京.通州.果园
+        </p>
+      </div>
+    </div>
+    <div class="table-row">
+      <div class="content">
+        <p class="data">
+        <img class="data" src="images/task5-25_07.png" width="24" height="24" />
+        服务时间
+        </p>
+        <span class="when">2015-7-5至2015-7-12</span>
+        <span class="cost">45元/小时
+        <a href="#">
+        <img class="goon" src="images/task5-26_14.png" width="19" height="34" />
+        </a>
+        </span>
+        <p class="place">
+        <img class="place" src="images/task5-24_17.png" width="24" height="23" />
+        北京.通州.果园
+        </p>
+      </div>
+    </div>
+    <div class="table-row">
+      <div class="content">
+        <p class="data">
+        <img class="data" src="images/task5-25_07.png" width="24" height="24" />
+        服务时间
+        </p>
+        <span class="when">2015-7-5至2015-7-12</span>
+        <span class="cost">45元/小时
+        <a href="#">
+        <img class="goon" src="images/task5-26_14.png" width="19" height="34" />
+        </a>
+        </span>
+        <p class="place">
+        <img class="place" src="images/task5-24_17.png" width="24" height="23" />
+        北京.通州.果园
+        </p>
+      </div>
+    </div>
+    <div class="table-row">
+      <div class="content">
+        <p class="data">
+        <img class="data" src="images/task5-25_07.png" width="24" height="24" />
+        服务时间
+        </p>
+        <span class="when">2015-7-5至2015-7-12</span>
+        <span class="cost">45元/小时
+        <a href="#">
+        <img class="goon" src="images/task5-26_14.png" width="19" height="34" />
+        </a>
+        </span>
+        <p class="place">
+        <img class="place" src="images/task5-24_17.png" width="24" height="23" />
+        北京.通州.果园
+        </p>
+      </div>
+    </div>
+    <div class="table-row">
+      <div class="content">
+        <p class="data">
+        <img class="data" src="images/task5-25_07.png" width="24" height="24" />
+        服务时间
+        </p>
+      </div>
+   </div>
+ </div>
+ <div class="footer">
+        <a href="#">
+        <img class="home" src="images/task5-211_17.png" width="46" height="40" />
+        <span class="home">首页</span>
+        </a>
+        <a href="#">
+        <div class="background"></div>
+        <img class="menu" src="images/task5-2123_17.png" width="40" height="40" />
+        </a>
+        <a href="#">
+        <img class="personal" src="images/task5-222_19.png" width="43" height="42" />
+        <span class="mine">我的</span>
+        </a>
+</div>
+</body>
+</html>
