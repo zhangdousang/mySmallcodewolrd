@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--<script src="jquery-3.1.1.slim.min.js"></script>-->
+    <script src=" http://code.jquery.com/jquery-latest.js"></script>
+   
+    <title>Document</title>
+    <style type="text/css">
+        body{
+            font-family: "Microsoft Yahei";
+        }
+        b{
+            color:red;
+        }
+        input[type=button]{
+            width: 120px;
+            height: 40px;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            color:#fff;
+            font-size: 15px;
+            font-weight: bold;
+            background-color: #ff9a02;
+            cursor: pointer;
+            margin:20px 0;
+        }
+        input[type=button]:hover{
+           opacity: 0.8;
+        }
+        .container{
+            width: 750px;
+            text-align: center;
+            border-radius: 5px;
+            border: 5px solid #e62c2c;
+        }
+    .balls{
+        margin: 0 auto;
+    }
+    .balls span{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        border-radius: 25px;
+        text-align: center;
+        color:#fff;
+        font-size: 20px;
+        background-color:#e62c2c;
+        box-shadow: 2px 4px 2px lightgray;
+    }
+    .balls span:last-child{
+        background-color:#167ad7;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h4>双色球 第2017005期 开奖日期：2017-01-10（周二） <b>全国投注量：3亿28,263,696元</b></h4>
+        <div class="balls">
+            <span id="red0">?</span>
+            <span id="red1">?</span>
+            <span id="red2">?</span>
+            <span id="red3">?</span>
+            <span id="red4">?</span>
+            <span id="red5">?</span> &nbsp;
+            <span id="blueBall">?</span>
+        </div>
+        <input type="button" id="clickBtn" value="点击免费摇号">
+    </div>
+    <script>
+        $("#clickBtn").click(function () {
+            // var array = [];
+            // for (var n = 0; ; n++) {
+            //     if (array.length < 6) {
+            //         redNumbers();
+            //     } else {
+            //         break;
+            //     }
+            // }
+            // function redNumbers() {
+            //     var rand = parseInt(Math.random() * 33) + 1;
+            //     for (var i = 0; i < array.length; i++) {
+            //         if (array[i] == rand) {
+            //             return false;
+            //         }
+            //     }
+            //     array.push(rand);
+            // }
+            // for (var i = 0; i < array.length; i++) {
+            //     $("#red" + i).html(array[i])
+            // }
+            // var blueNumber = parseInt(Math.random() * 16) + 1;
+            // $("#blueBall").html(blueNumber);
+            // var arry = [];
+            // for (var i = 0; ; i++) {
+            //     if (arry.length < 6) {
+            //         gotoget();
+            //     }
+            //     else {
+            //         break;
+            //     }
+            // }
+            // function gotoget() {
+            //     var rad = parseInt(Math.random() * 33 + 1);
+            //     for (var j = 0; j < arry.length; j++) {
+            //         if (arry[j] == rad) {
+            //             return false;
+            //         }
+            //     }
+            //     arry.push(rad);
+            // }
+            // console.log(arry)
+
+            // 函数原型构造方法
+            var DoubleBall = function () {
+                this.redBalls = [];
+                this.blueBall;
+            }
+            DoubleBall.prototype.gennerate = function () {
+                for (var j = 0; j < 6; j++) {
+                    var flag = false;
+                    var newBall = parseInt(Math.random() * 33) + 1;
+                    for (var i = 0; i < this.redBalls.length; i++) {
+                        if (newBall == this.redBalls[i]) {
+                            flag = true;
+                            break;
+                        }
+                    }
+                    if (!flag) {
+                        this.redBalls.push(newBall);
+                    }
+                    else {
+                        j--;
+                    }
+                }
+                this.blueBall = parseInt(Math.random() * 16) + 1;
+            }
+            DoubleBall.prototype.sort = function () {
+                this.redBalls.sort(function (a, b) {
+                    return a - b;
+                });
+            }
+            var DoubleBall = new DoubleBall();
+            DoubleBall.gennerate();
+            DoubleBall.sort();
+            var redNumbers = DoubleBall.redBalls;
+            for (var i = 0; i < redNumbers.length; i++) {
+                $("#red" + i).html(redNumbers[i])
+            }
+            $("#blueBall").html(DoubleBall.blueBall);
+        })
+    </script>
+</body>
+
+</html>
